@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPART CI</title>
+    <link rel="stylesheet" href="/Docs/Styles/Style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+</style>
+
+<body>
+    <div class="z-20 w-full transition-all" id="bgChangeNav">
+        <div class="mx-auto  max-w-screen-xl px-6 lg:px-8 relative">
+            <div class="relative flex justify-between h-20 space-x-10 w-full">
+                <div class="flex justify-start">
+                    <a class="flex flex-shrink-0 items-center" href="./index.html">
+                        <img class="block h-[2rem] w-auto" src="./Docs/Assets/Images/logo_bienici.svg">
+                    </a>
+                </div>
+                <ul class="hidden md:flex justify-center items-center gap-8 font-medium">
+                    <li><a class=" transition-all navUnderLine2 font-semibold text-[#495960] hover:text-[#000]"
+                            href="#">Link</a></li>
+                    <li><a class=" transition-all navUnderLine2 font-semibold text-[#495960] hover:text-[#000]"
+                            href="#">Link</a></li>
+                    <li><a class=" transition-all navUnderLine2 font-semibold text-[#495960] hover:text-[#000]"
+                            href="#">Link</a></li>
+                    </li>
+                    <div id="showOnHoverparent" class="flex transition-all  items-center cursor-pointer relative ">
+                        <i class="fa-solid fa-user text-white scale-75 bg-[#009db0] p-2 px-[9px] rounded-full"></i>
+                        <i class="fa-solid fa-angle-down opacity-75"></i>
+                        <div id="showOnHoverChild"
+                            class="absolute myShadow border w-[255px] flex flex-col gap-3 bg-white top-14 transition-all right-0 p-5 rounded-sm text-[#495960] font-normal text-lg ">
+                            <div class="flex  items-center gap-4">
+                                <i class="fa-solid fa-heart"></i>
+                                My favorites My favorites
+                            </div>
+                            <div class="flex  items-center gap-4">
+                                <i class="fa-solid fa-heart"></i>
+                                My favorites My favorites
+                            </div>
+                            <div class="flex  items-center gap-4">
+                                <i class="fa-solid fa-heart"></i>
+                                My favorites My favorites
+                            </div>
+                            <div class="flex  items-center gap-4">
+                                <i class="fa-solid fa-heart"></i>
+                                My favorites My favorites
+                            </div>
+                            <div class="flex  items-center gap-4">
+                                <i class="fa-solid fa-heart"></i>
+                                My favorites
+                            </div>
+                            <div class="flex  items-center gap-4">
+                                <i class="fa-solid fa-heart"></i>
+                                My favorites
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <div id="openNav"
+                    class="flex-shrink-0 cursor-pointer flex md:hidden px-2 py-3 items-center space-x-8 flex-1 justify-end justify-self-end">
+                    <i class="fa-solid fa-bars text-2xl text-[#fff]"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive overflow-hidden relative transition-all">
+        <div id="resNav" class="w-[0rem] overflow-hidden bg-black transition-all h-screen fixed top-0 left-0 z-50">
+            <h1 id="closenNav" class="absolute cursor-pointer right-10 top-8 text-2xl font-bold"><i
+                    class="fa-solid fa-xmark text-white"></i></h1>
+            <div class="p-5 ">
+                <img src="./Docs/Assets/logo.png" class="h-16" alt="">
+                <ul class="flex flex-col gap-2 mt-10">
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link </a>
+                    </li>
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link</a>
+                    </li>
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link </a>
+                    </li>
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5">
+        <div class="flex text-[#495960] items-center justify-between ">
+            <h1 class=" font-semibold text-2xl">Purchase</h1>
+            <div class="flex items-center gap-4">
+                <a class="text-lg font-semibold">Map</a>
+                <a class="text-lg font-semibold">List</a>
+                <a class="text-lg font-semibold">Gallery</a>
+            </div>
+        </div>
+        <div class="">
+
+
+            <button id="dropdownDefaultButton"
+                class="bg-transparent text-[#495960]  font-bold rounded-sm  px-5 py-2.5 text-center inline-flex items-center border border-zinc-600"
+                type="button" onclick="toggleDropdown()">Dropdown button
+                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 4 4 4-4" />
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown"
+                class="z-10 mt-3 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                            out</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const openNav = document.getElementById(`openNav`)
+    const closenNav = document.getElementById(`closenNav`)
+    const resNav = document.getElementById(`resNav`)
+
+    openNav.addEventListener('click', () => {
+        resNav.style.width = "22rem"
+    })
+    closenNav.addEventListener('click', () => {
+        resNav.style.width = "0rem"
+    })
+
+    function toggleDropdown() {
+        const dropdown = document.getElementById('dropdown');
+        dropdown.classList.toggle('hidden');
+    }
+</script>
+
+</html>
