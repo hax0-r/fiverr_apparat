@@ -96,3 +96,8 @@
     top: 40px;
   }
 }
+
+.relevance{
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0 100%, 0 61%);
+
+}
