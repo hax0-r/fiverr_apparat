@@ -348,21 +348,119 @@
     const allDropdowns = document.getElementById("allDropdowns")
 
 
-    // cardssssssssss
-    // Card data array
     const cardData = [
-        {
-            title: "8-room house 235 m²",
-            location: "93100 Montreuil (Signac - Peach Ripe)",
-            price: "988,900 €",
-            pricePerM2: "4,208 €/m²",
-            image: "./Docs/Assets/Images/card1.jpeg",
-            tags: ["Video", "Exclusivity"],
-            photosCount: 17,
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
-        },
-        // Add more cards as needed
-    ];
+    {
+        title: "8-room house 235 m²",
+        location: "93100 Montreuil (Signac - Peach Ripe)",
+        price: "988,900 €",
+        pricePerM2: "4,208 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Video", "Exclusivity"],
+        photosCount: 17,
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+    },
+    {
+        title: "Modern 2-room apartment 65 m²",
+        location: "75012 Paris (Bercy Village)",
+        price: "335,000 €",
+        pricePerM2: "5,154 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["New", "City Center"],
+        photosCount: 12,
+        description: "Charming modern apartment in the heart of the city with all amenities...",
+    },
+    {
+        title: "Spacious 4-room villa 180 m²",
+        location: "06200 Nice (Mont Boron)",
+        price: "1,250,000 €",
+        pricePerM2: "6,944 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Luxury", "Sea View"],
+        photosCount: 23,
+        description: "Elegant villa with stunning sea views, private pool, and garden...",
+    },
+    {
+        title: "Cozy studio 30 m²",
+        location: "69001 Lyon (Presqu'île)",
+        price: "190,000 €",
+        pricePerM2: "6,333 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Investment", "Compact"],
+        photosCount: 8,
+        description: "Compact and well-located studio ideal for young professionals or investment...",
+    },
+    {
+        title: "Historic 6-room manor 300 m²",
+        location: "56100 Lorient (Downtown)",
+        price: "1,800,000 €",
+        pricePerM2: "6,000 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Heritage", "Spacious"],
+        photosCount: 30,
+        description: "Beautifully preserved manor with historical charm and extensive grounds...",
+    },
+    {
+        title: "Contemporary loft 120 m²",
+        location: "33000 Bordeaux (Chartrons)",
+        price: "575,000 €",
+        pricePerM2: "4,792 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Trendy", "Open Space"],
+        photosCount: 15,
+        description: "Stylish loft with open-plan living space and modern finishes...",
+    },
+    {
+        title: "Charming countryside cottage 85 m²",
+        location: "14200 Hérouville-Saint-Clair (Countryside)",
+        price: "250,000 €",
+        pricePerM2: "2,941 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Quaint", "Peaceful"],
+        photosCount: 10,
+        description: "Quaint cottage in a peaceful countryside setting with a beautiful garden...",
+    },
+    {
+        title: "Luxury penthouse 150 m²",
+        location: "06000 Nice (City Center)",
+        price: "2,500,000 €",
+        pricePerM2: "16,667 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Exclusive", "Panoramic View"],
+        photosCount: 25,
+        description: "Opulent penthouse with panoramic views of the city and luxurious interiors...",
+    },
+    {
+        title: "Affordable family home 110 m²",
+        location: "37000 Tours (Suburbs)",
+        price: "280,000 €",
+        pricePerM2: "2,545 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Family", "Suburban"],
+        photosCount: 14,
+        description: "Spacious family home located in a friendly suburban neighborhood...",
+    },
+    {
+        title: "Elegant 3-room apartment 80 m²",
+        location: "75007 Paris (Eiffel Tower)",
+        price: "850,000 €",
+        pricePerM2: "10,625 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Elegant", "Prime Location"],
+        photosCount: 18,
+        description: "Sophisticated apartment with a prime location and elegant finishes...",
+    },
+    {
+        title: "Rustic mountain cabin 50 m²",
+        location: "74000 Annecy (Alps)",
+        price: "200,000 €",
+        pricePerM2: "4,000 €/m²",
+        image: "./Docs/Assets/Images/card1.jpeg",
+        tags: ["Mountain", "Rustic"],
+        photosCount: 9,
+        description: "Charming rustic cabin nestled in the mountains, ideal for nature lovers...",
+    }
+];
+
 
     // Function to generate cards dynamically
     function generateCards(view) {
