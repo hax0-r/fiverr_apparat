@@ -35,6 +35,20 @@
   }
 }
 
+.animiateFade {
+  animation: fade 1s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .navUnderLine2 {
   position: relative;
   padding: 0 2px;
@@ -106,6 +120,7 @@
 
 #articleHover:hover {
   transition: 200ms all;
+
   img {
     transform: scale(1.2);
   }

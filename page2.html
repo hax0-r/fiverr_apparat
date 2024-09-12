@@ -20,57 +20,30 @@
 </style>
 
 <body>
-    <div class="z-20 w-full transition-all" id="bgChangeNav">
-        <div class="mx-auto   px-6 lg:px-8 relative">
+    <div class="z-20 w-full  transition-all" id="bgChangeNav">
+        <div class="mx-auto  max-w-screen-xl px-6 lg:px-8 relative">
             <div class="relative flex justify-between h-20 space-x-10 w-full">
                 <div class="flex justify-start">
-                    <a class="flex flex-shrink-0 items-center" href="./index.html">
-                        <img class="block h-[2rem] w-auto" src="./Docs/Assets/Images/logo_bienici.svg">
+                    <a class="flex flex-shrink-0 items-center" href="./page2.html">
+                        <img class="block h-[6rem] w-auto" src="./Docs/Assets/Images/logo.png">
                     </a>
                 </div>
                 <ul class="hidden md:flex justify-center items-center gap-8 font-medium">
-                    <li><a class=" transition-all navUnderLine2 font-semibold text-[#495960] hover:text-[#000]"
-                            href="#">Link</a></li>
-                    <li><a class=" transition-all navUnderLine2 font-semibold text-[#495960] hover:text-[#000]"
-                            href="#">Link</a></li>
-                    <li><a class=" transition-all navUnderLine2 font-semibold text-[#495960] hover:text-[#000]"
-                            href="#">Link</a></li>
+                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Vendre</a></li>
+                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Louer</a></li>
+                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Acheter</a></li>
+                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Contacts</a></li>
+                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Temoignages</a>
                     </li>
-                    <div id="showOnHoverparent" class="flex transition-all  items-center cursor-pointer relative ">
-                        <i class="fa-solid fa-user text-white scale-75 bg-[#009db0] p-2 px-[9px] rounded-full"></i>
-                        <i class="fa-solid fa-angle-down opacity-75"></i>
-                        <div id="showOnHoverChild"
-                            class="absolute myShadow border w-[255px] flex flex-col gap-3 bg-white top-14 transition-all right-0 p-5 rounded-sm text-[#495960] font-normal text-lg ">
-                            <div class="flex  items-center gap-4">
-                                <i class="fa-solid fa-heart"></i>
-                                My favorites My favorites
-                            </div>
-                            <div class="flex  items-center gap-4">
-                                <i class="fa-solid fa-heart"></i>
-                                My favorites My favorites
-                            </div>
-                            <div class="flex  items-center gap-4">
-                                <i class="fa-solid fa-heart"></i>
-                                My favorites My favorites
-                            </div>
-                            <div class="flex  items-center gap-4">
-                                <i class="fa-solid fa-heart"></i>
-                                My favorites My favorites
-                            </div>
-                            <div class="flex  items-center gap-4">
-                                <i class="fa-solid fa-heart"></i>
-                                My favorites
-                            </div>
-                            <div class="flex  items-center gap-4">
-                                <i class="fa-solid fa-heart"></i>
-                                My favorites
-                            </div>
-                        </div>
+                    <div class="flex items-center gap-4 text-xl text-black">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in text-[1.4rem]"></i>
+                        <i class="fa-brands fa-instagram text-2xl"></i>
                     </div>
                 </ul>
                 <div id="openNav"
                     class="flex-shrink-0 cursor-pointer flex md:hidden px-2 py-3 items-center space-x-8 flex-1 justify-end justify-self-end">
-                    <i class="fa-solid fa-bars text-2xl text-[#fff]"></i>
+                    <i class="fa-solid fa-bars text-2xl text-[#000]"></i>
                 </div>
             </div>
         </div>
@@ -105,7 +78,7 @@
     </div>
 
     <div class="flex h-[calc(100vh-8.5rem)] ">
-        <div class="w-full" id="mapframe">
+        <div class="w-full hidden md:block" id="mapframe">
             <iframe width="100%" height="100%" class=" " frameborder="0" title="map" marginheight="0" marginwidth="0"
                 scrolling="no"
                 src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
@@ -130,7 +103,7 @@
                         <div class="flex items-center justify-center flex-row gap-2">
                             <div class="">
                                 <button id="dropdownDefaultButton"
-                                    class="bg-transparent text-[#495960] font-bold rounded-sm px-5 py-2.5 text-center flex gap-2 items-center border border-zinc-600"
+                                    class="bg-transparent text-nowrap text-[#495960] font-bold rounded-sm px-5 py-2.5 text-center flex gap-2 items-center border border-zinc-600"
                                     type="button" onclick="toggleDropdown()">Buy
                                     <i class="fa-solid fa-angle-down text-sm"></i>
                                 </button>
@@ -162,23 +135,23 @@
                             <input type="text" placeholder="+ 100,000 properties for sale in France"
                                 class="border p-2 py-[10px] w-full">
                         </div>
-                        <div class="mt-2 grid grid-cols-4 gap-2">
-                            <button 
+                        <div class="mt-2 grid md:grid-cols-4 grid-cols-2 gap-2">
+                            <button
                                 class="bg-transparent text-[#495960] font-bold rounded-sm px-3 py-2.5 text-center flex justify-between text-nowrap gap-2 items-center border border-zinc-600"
                                 type="button">5 types of goods
                                 <i class="fa-solid fa-angle-down text-sm"></i>
                             </button>
-                            <button 
+                            <button
                                 class="bg-transparent text-zinc-400 rounded-sm px-3 py-2.5 text-center justify-between flex gap-2 items-center border border-zinc-600"
                                 type="button">your budget
                                 <i class="fa-solid fa-angle-down text-sm"></i>
                             </button>
-                            <button 
+                            <button
                                 class="bg-transparent text-zinc-400 rounded-sm px-3 py-2.5 text-center justify-between flex gap-2 items-center border border-zinc-600"
                                 type="button">Number of parts
                                 <i class="fa-solid fa-angle-down text-sm"></i>
                             </button>
-                            <button 
+                            <button
                                 class="bg-transparent text-zinc-400 rounded-sm px-3 py-2.5 text-center justify-between flex gap-2 items-center border border-zinc-600"
                                 type="button">Surface
                                 <i class="fa-solid fa-angle-down text-sm"></i>
@@ -188,15 +161,319 @@
                     </div>
 
                     <div class="flex items-center justify-between px-2 mt-4 mb-3">
-                        <button class="flex items-center gap-2 cursor-pointer text-zinc-600"><i
-                                class="fa-sharp fa-solid fa-plus w-9 h-9 border-2 border-zinc-400 flex rounded-full items-center text-zinc-500 justify-center"></i>
+                        <button class="flex items-center gap-2 cursor-pointer text-zinc-600" onclick="showCriteria()"><i
+                                id="plusIcn"
+                                class="fa-sharp fa-solid fa-plus w-9 h-9 border-2 border-zinc-400 flex rounded-full transition-all items-center text-zinc-500 justify-center"></i>
                             Show all criteria</button>
                         <button
                             class="uppercase bg-[#ea516c] py-2 px-4  text-white rounded-sm flex items-center gap-2"><i
                                 class="fa-regular fa-bell"></i>create an alert</button>
                     </div>
+
+                    <div class="px-3 hidden animiateFade" id="criteria">
+                        <p class="text-[13px] uppercase  pb-2 text-zinc-600">About the property</p>
+                        <div class="flex w-full items-center gap-3">
+                            <button
+                                class="bg-transparent text-zinc-400 font-light w-full rounded-sm px-3 py-2.5 text-center flex justify-between text-nowrap gap-2 items-center border border-zinc-300 "
+                                type="button">Numbers of room
+                                <i class="fa-solid fa-angle-down text-sm"></i>
+                            </button>
+                            <button
+                                class="bg-transparent text-zinc-400 font-light w-full rounded-sm px-3 py-2.5 text-center flex justify-between text-nowrap gap-2 items-center border border-zinc-300 "
+                                type="button">Land area
+                                <i class="fa-solid fa-angle-down text-sm"></i>
+                            </button>
+                        </div>
+
+
+                        <div class="border  mt-5 w-full relative">
+                            <p
+                                class=" uppercase text-[13px] -top-2 px-2 left-1 absolute bg-white pl-2 pb-2 text-zinc-600">
+                                I want to buy…</p>
+                            <div class="grid px-4 pt-5 pb-3 grid-cols-3 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="balcony" class="form-checkbox h-5 w-5 text-gray-700"
+                                        checked />
+                                    <label for="balcony" class="ml-2 text-gray-700 text-sm">In the New</label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="terrace" class="form-checkbox h-5 w-5 text-gray-700"
+                                        checked />
+                                    <label for="terrace" class="ml-2 text-gray-700 text-sm">In the Old</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-[13px] uppercase pb-2 text-zinc-600">About the property</p>
+                            <div class="flex items-center justify-center gap-2">
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">HAS</button>
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">B</button>
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">C</button>
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">D</button>
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">E</button>
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">F</button>
+                                <button
+                                    class="border border-zinc-300 transition-all duration-500 py-3 font-medium text-gray-700 bg-transparent w-full"
+                                    onclick="toggleButton(this)">G</button>
+                            </div>
+                        </div>
+
+
+                        <div class="border  mt-5 w-full relative">
+                            <p
+                                class=" uppercase text-[13px] -top-2 px-2 left-1 absolute bg-white pl-2 pb-2 text-zinc-600">
+                                Additional areas</p>
+                            <div class="grid px-4 pt-5 pb-3 grid-cols-3 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="balcony" class="form-checkbox h-5 w-5 text-gray-700"
+                                        checked />
+                                    <label for="balcony" class="ml-2 text-gray-700 text-sm">Balcony <span
+                                            class="text-zinc-400">(5 214)</span></label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="terrace" class="form-checkbox h-5 w-5 text-gray-700"
+                                        checked />
+                                    <label for="terrace" class="ml-2 text-gray-700 text-sm">Terrace <span
+                                            class="text-zinc-400">(5 214)</span></label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="balconyOrTerrace"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="balconyOrTerrace" class="ml-2 text-gray-700 text-sm">Balcony or terrace
+                                        <span class="text-zinc-400">(5 214)</span></label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="cellar" class="form-checkbox h-5 w-5 text-gray-700"
+                                        checked />
+                                    <label for="cellar" class="ml-2 text-gray-700 text-sm">Cellar <span
+                                            class="text-zinc-400">(5 214)</span></label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="parking" class="form-checkbox h-5 w-5 text-gray-700"
+                                        checked />
+                                    <label for="parking" class="ml-2 text-gray-700 text-sm">Parking <span
+                                            class="text-zinc-400">(5 214)</span></label>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="garden" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="garden" class="ml-2 text-gray-700 text-sm">Garden <span
+                                            class="text-zinc-400">(5 214)</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Section: Your Special Requirements -->
+                        <div class="border mt-5 w-full relative">
+                            <p
+                                class="uppercase text-[13px] -top-2 px-2 left-1 absolute bg-white pl-2 pb-2 text-zinc-600">
+                                Your special requirements</p>
+                            <div class="grid px-4 pt-5 pb-3 grid-cols-3 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="digicode" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="digicode" class="ml-2 text-gray-700 text-sm">Digicode <span
+                                            class="text-zinc-400">(36 674)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="intercom" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="intercom" class="ml-2 text-gray-700 text-sm">Intercom <span
+                                            class="text-zinc-400">(78 817)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="guardian" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="guardian" class="ml-2 text-gray-700 text-sm">Guardian <span
+                                            class="text-zinc-400">(14 879)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="elevator" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="elevator" class="ml-2 text-gray-700 text-sm">Elevator <span
+                                            class="text-zinc-400">(100 000+)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="accessible"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="accessible" class="ml-2 text-gray-700 text-sm">Accessible <span
+                                            class="text-zinc-400">(2 568)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="balcony" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="balcony" class="ml-2 text-gray-700 text-sm">Balcony <span
+                                            class="text-zinc-400">(50 025)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="terrace" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="terrace" class="ml-2 text-gray-700 text-sm">Terrace <span
+                                            class="text-zinc-400">(25 964)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="parking" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="parking" class="ml-2 text-gray-700 text-sm">Parking <span
+                                            class="text-zinc-400">(61 598)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="garden" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="garden" class="ml-2 text-gray-700 text-sm">Garden <span
+                                            class="text-zinc-400">(34 672)</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Floor Criteria -->
+                        <div class="border mt-5 w-full relative">
+                            <p
+                                class="uppercase text-[13px] -top-2 px-2 left-1 absolute bg-white pl-2 pb-2 text-zinc-600">
+                                Floor criteria</p>
+                            <div class="grid px-4 pt-5 pb-3 grid-cols-3 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="duplex" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="duplex" class="ml-2 text-gray-700 text-sm">Duplex <span
+                                            class="text-zinc-400">(3 426)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="top-floor" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="top-floor" class="ml-2 text-gray-700 text-sm">Top floor <span
+                                            class="text-zinc-400">(42 789)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="ground-floor"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="ground-floor" class="ml-2 text-gray-700 text-sm">Ground floor <span
+                                            class="text-zinc-400">(100 000+)</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Ad Level Filtering -->
+                        <div class="border mt-5 w-full relative">
+                            <p
+                                class="uppercase text-[13px] -top-2 px-2 left-1 absolute bg-white pl-2 pb-2 text-zinc-600">
+                                Ad level filtering</p>
+                            <div class="grid px-4 pt-5 pb-3 grid-cols-3 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="exclusivity"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="exclusivity" class="ml-2 text-gray-700 text-sm">Exclusivity <span
+                                            class="text-zinc-400">(100 000+)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="3d-modeling"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="3d-modeling" class="ml-2 text-gray-700 text-sm">3D modeling <span
+                                            class="text-zinc-400">(25)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="preview" class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="preview" class="ml-2 text-gray-700 text-sm">Preview <span
+                                            class="text-zinc-400">(262)</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Investments and Others -->
+                        <div class="border mt-5 w-full relative ">
+                            <p
+                                class="uppercase text-[13px] -top-2 px-2 left-1 absolute bg-white pl-2 pb-2 text-zinc-600">
+                                Investments and others</p>
+                            <div class="grid px-4 pt-5 pb-3 grid-cols-3 gap-4">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="life-annuities-only"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="life-annuities-only" class="ml-2 text-gray-700 text-sm">Life annuities
+                                        only <span class="text-zinc-400">(3 830)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="exclude-life-annuities"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="exclude-life-annuities" class="ml-2 text-gray-700 text-sm">Exclude life
+                                        annuities <span class="text-zinc-400">(1...</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="bare-ownership-only"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="bare-ownership-only" class="ml-2 text-gray-700 text-sm">Bare ownership
+                                        only <span class="text-zinc-400">(696)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="exclude-bare-ownership"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="exclude-bare-ownership" class="ml-2 text-gray-700 text-sm">Exclude bare
+                                        ownership
+                                        <span class="text-zinc-400">(1..</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="eligible-pinel-law"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="eligible-pinel-law" class="ml-2 text-gray-700 text-sm">Eligible for the
+                                        Pinel law
+                                        <span class="text-zinc-400">...</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="student-residence"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="student-residence" class="ml-2 text-gray-700 text-sm">Student residence
+                                        <span class="text-zinc-400">(860)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="senior-residence"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="senior-residence" class="ml-2 text-gray-700 text-sm">Senior residence
+                                        <span class="text-zinc-400">(889)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="tourist-residence"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="tourist-residence" class="ml-2 text-gray-700 text-sm">Tourist residence
+                                        <span class="text-zinc-400">(1 158)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="managed-residence"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="managed-residence" class="ml-2 text-gray-700 text-sm">Managed residence
+                                        <span class="text-zinc-400">(2 902)</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="exclude-residences"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="exclude-residences" class="ml-2 text-gray-700 text-sm">Exclude
+                                        residences
+                                        <span class="text-zinc-400">(1...</span></label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="eligible-denormandie"
+                                        class="form-checkbox h-5 w-5 text-gray-700" />
+                                    <label for="eligible-denormandie" class="ml-2 text-gray-700 text-sm">Eligible for
+                                        the Denormandie...
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button
+                            class="uppercase bg-[#fbba20] font-bold mt-4 py-3 px-4 w-full justify-center  text-white rounded-sm flex items-center gap-2">VIEW
+                            ADS</button>
+                    </div>
+
                 </div>
-                <div class=" h-full bg-[#f1f3f4] ">
+                <div class=" h-full bg-[#f1f3f4] " id="othersAndFooter">
 
                     <div class=" max-w-7xl mx-auto px-3">
                         <div class="z-10 sticky  top-0 grid grid-cols-2 bg-white">
@@ -209,19 +486,20 @@
                         </div>
 
                         <!-- Map View Container -->
-                        <div class="grid mt-3 px-2 grid-cols-2 bg-[#f1f3f4] gap-5 container mx-auto" id="mapView"></div>
+                        <div class="grid mt-3 animiateFade px-2 grid-cols-2 bg-[#f1f3f4] gap-5 container mx-auto"
+                            id="mapView"></div>
 
                         <!-- List View Container -->
-                        <div class="grid mt-3 px-2 grid-cols-1 bg-[#f1f3f4] gap-5 container mx-auto pt-8" id="listView"
-                            style="display: none;"></div>
+                        <div class="grid mt-3 animiateFade px-2 grid-cols-1 bg-[#f1f3f4] gap-5 container mx-auto pt-8"
+                            id="listView" style="display: none;"></div>
 
                         <!-- Gallery View Container -->
-                        <div class="grid mt-3 px-2 grid-cols-4 bg-[#f1f3f4] gap-5 container mx-auto" id="galleryView"
-                            style="display: none;"></div>
+                        <div class="md:grid mt-3 hidden animiateFade px-2 md:grid-cols-4 grid-cols-2 bg-[#f1f3f4] gap-5 container mx-auto"
+                            id="galleryView" style="display: none;"></div>
 
 
 
-                        <div class="mt-3 px-2 bg-[#f1f3f4] flex items-center justify-center pt-8 pb-4 flex-col gap-4">
+                        <div class=" px-2 bg-[#f1f3f4] flex items-center justify-center pt-8 pb-4 flex-col gap-4">
                             <button
                                 class="uppercase bg-[#ea516c] py-2 px-4  text-white rounded-sm flex items-center gap-2"><i
                                     class="fa-regular fa-bell"></i>create an alert for this search</button>
@@ -233,7 +511,7 @@
                         <div class="px-2 bg-[#f1f3f4] pb-5">
                             <div class="flex justify-center max-w-[335px]  mx-auto items-center">
                                 <button
-                                    class="w-full px-4 border-zinc-300 py-2 border-t-2 border-l-2 border-b-2 text-base font-bold  bg-transparent hover:bg-gray-200">
+                                    class="w-full px-4 border-zinc-300 py-2 border-t-2 border-l-2 border-b-2 text-base font-bold  bg-gray-200 hover:bg-gray-200">
                                     1
                                 </button>
                                 <button
@@ -243,38 +521,29 @@
                                 <button
                                     class="w-full px-4 border-zinc-300 py-2 border-t-2 border-b-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
                                     3
-                                    <button
-                                        class="w-full px-4 border-zinc-300 py-2 border-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                        4
-                                    </button>
-                                    <button
-                                        class="w-full px-4 border-zinc-300 py-2 border-t-2 border-b-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                        5
-                                        <button
-                                            class="w-full px-4 border-zinc-300 py-2 border-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                            6
-                                        </button>
-                                        <button
-                                            class="w-full px-4 border-zinc-300 py-2 border-t-2 border-b-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                            7
-                                            <button
-                                                class="w-full px-4 border-zinc-300 py-2 border-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                                8
-                                            </button>
-                                            <button
-                                                class="w-full px-4 border-zinc-300 py-2 border-t-2 border-b-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                                9
-                                            </button>
-                                            <button
-                                                class="w-full px-4 border-zinc-300 py-2 border-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
-                                                10
-                                            </button>
+                                </button>
+                                <button
+                                    class="w-full px-4 border-zinc-300 py-2 border-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
+                                    4
+                                </button>
+                                <button
+                                    class="w-full px-4 border-zinc-300 py-2 border-t-2 border-b-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
+                                    5
+                                </button>
+                                <button
+                                    class="w-full px-4 border-zinc-300 py-2 border-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
+                                    6
+                                </button>
+                                <button
+                                    class="w-full px-4 border-zinc-300 py-2 border-t-2 border-r-2 border-b-2 text-base text-gray-600 bg-transparent hover:bg-gray-200">
+                                    7
+                                </button>
                             </div>
                         </div>
 
-                        <div class="bg-white flex py-5 justify-center px-2 ">
-                            <h2 class="text-xl w-[40%] font-medium text-[#495960]">Follow the news of Bien'ici</h2>
-                            <div class="w-[40%]">
+                        <div class="bg-white flex py-5 justify-center px-2 md:flex-row flex-col w-full">
+                            <h2 class="text-xl md:w-[40%] font-medium text-[#495960]">Follow the news of Bien'ici</h2>
+                            <div class="md:w-[40%]">
                                 <div class="relative">
                                     <input type="email" id="input-6"
                                         class="block w-full h-10 pr-8 pl-3 mt-1 text-sm text-gray-700 border  rounded-sm "
@@ -289,18 +558,23 @@
                             </div>
                         </div>
 
-                        <div class="bg-[#495960] p-2 py-12 flex items-center justify-center gap-10">
-                            <svg viewBox="0 0 180.669 203.574" class="h-16" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M90.335 0C40.524 0 0 40.225 0 89.668c0 20.971 14.54 46.014 43.218 74.435 20.52 20.336 40.739 34.897 41.589 35.508l5.528 3.963 5.527-3.963c.85-.61 21.069-15.171 41.589-35.508 28.678-28.421 43.218-53.464 43.218-74.435C180.67 40.225 140.145 0 90.335 0zm0 18.741c20.328 0 38.686 8.483 51.709 22.054a56.624 56.624 0 0 0-14.294-1.809c-14.872 0-28.387 5.672-37.417 15.144-9.03-9.472-22.545-15.144-37.418-15.144-5.043 0-9.813.643-14.285 1.803 13.025-13.567 31.38-22.048 51.705-22.048zm0 161.574c-24.133-18.433-71.454-60.748-71.454-90.647 0-3.6.276-7.137.8-10.595a35.76 35.76 0 0 1 1.636-3.932c5.774-11.729 17.587-18.73 31.599-18.73 23.727 0 32.524 18.157 37.418 25.985 5.209-8.335 14.836-25.985 37.416-25.985 14.013 0 25.826 7.002 31.601 18.73a35.917 35.917 0 0 1 1.639 3.941c.523 3.455.799 6.989.799 10.586 0 29.898-47.321 72.213-71.454 90.647z"
-                                    fill="#b6bdbf"></path>
-                            </svg>
-                            <div class="text-center space-y-2">
-                                <h2 class="text-[#b6bdbf] ">Need help?</h2>
-                                <h2 class="text-[#b6bdbf] ">Need help? Need help Need help</h2>
-                                <h2 class="text-[#b6bdbf] ">Need help?</h2>
-                                <h2 class="text-[#b6bdbf] ">Need help?</h2>
-                            </div>
+                        <!-- footer -->
+
+                        <div class="bg-[#202632] py-5 px-5 text-white text-center w-full mt-1">
+                            <ul class="hidden md:flex justify-center items-center gap-6  pb-5">
+                                <li><a class="hover:text-[#fff] text-white transition-all navUnderLine"
+                                        href="#">Vendre</a></li>
+                                <li><a class="hover:text-[#fff] text-white transition-all navUnderLine"
+                                        href="#">Louer</a></li>
+                                <li><a class="hover:text-[#fff] text-white transition-all navUnderLine"
+                                        href="#">Acheter</a></li>
+                                <li><a class="hover:text-[#fff] text-white transition-all navUnderLine"
+                                        href="#">Contacts</a></li>
+                                <li><a class="hover:text-[#fff] text-white transition-all navUnderLine"
+                                        href="#">Temoignages</a>
+                                </li>
+                            </ul>
+                            <p class="text-sm opacity-75">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
@@ -346,120 +620,94 @@
     const gridcols2cards = document.getElementById("grid-cols-2-cards")
     const Purchase = document.getElementById("Purchase")
     const allDropdowns = document.getElementById("allDropdowns")
+    if (innerWidth < 600) {
+        gallery.style.display = "none"
+    }
 
 
     const cardData = [
-    {
-        title: "8-room house 235 m²",
-        location: "93100 Montreuil (Signac - Peach Ripe)",
-        price: "988,900 €",
-        pricePerM2: "4,208 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Video", "Exclusivity"],
-        photosCount: 17,
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
-    },
-    {
-        title: "Modern 2-room apartment 65 m²",
-        location: "75012 Paris (Bercy Village)",
-        price: "335,000 €",
-        pricePerM2: "5,154 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["New", "City Center"],
-        photosCount: 12,
-        description: "Charming modern apartment in the heart of the city with all amenities...",
-    },
-    {
-        title: "Spacious 4-room villa 180 m²",
-        location: "06200 Nice (Mont Boron)",
-        price: "1,250,000 €",
-        pricePerM2: "6,944 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Luxury", "Sea View"],
-        photosCount: 23,
-        description: "Elegant villa with stunning sea views, private pool, and garden...",
-    },
-    {
-        title: "Cozy studio 30 m²",
-        location: "69001 Lyon (Presqu'île)",
-        price: "190,000 €",
-        pricePerM2: "6,333 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Investment", "Compact"],
-        photosCount: 8,
-        description: "Compact and well-located studio ideal for young professionals or investment...",
-    },
-    {
-        title: "Historic 6-room manor 300 m²",
-        location: "56100 Lorient (Downtown)",
-        price: "1,800,000 €",
-        pricePerM2: "6,000 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Heritage", "Spacious"],
-        photosCount: 30,
-        description: "Beautifully preserved manor with historical charm and extensive grounds...",
-    },
-    {
-        title: "Contemporary loft 120 m²",
-        location: "33000 Bordeaux (Chartrons)",
-        price: "575,000 €",
-        pricePerM2: "4,792 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Trendy", "Open Space"],
-        photosCount: 15,
-        description: "Stylish loft with open-plan living space and modern finishes...",
-    },
-    {
-        title: "Charming countryside cottage 85 m²",
-        location: "14200 Hérouville-Saint-Clair (Countryside)",
-        price: "250,000 €",
-        pricePerM2: "2,941 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Quaint", "Peaceful"],
-        photosCount: 10,
-        description: "Quaint cottage in a peaceful countryside setting with a beautiful garden...",
-    },
-    {
-        title: "Luxury penthouse 150 m²",
-        location: "06000 Nice (City Center)",
-        price: "2,500,000 €",
-        pricePerM2: "16,667 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Exclusive", "Panoramic View"],
-        photosCount: 25,
-        description: "Opulent penthouse with panoramic views of the city and luxurious interiors...",
-    },
-    {
-        title: "Affordable family home 110 m²",
-        location: "37000 Tours (Suburbs)",
-        price: "280,000 €",
-        pricePerM2: "2,545 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Family", "Suburban"],
-        photosCount: 14,
-        description: "Spacious family home located in a friendly suburban neighborhood...",
-    },
-    {
-        title: "Elegant 3-room apartment 80 m²",
-        location: "75007 Paris (Eiffel Tower)",
-        price: "850,000 €",
-        pricePerM2: "10,625 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Elegant", "Prime Location"],
-        photosCount: 18,
-        description: "Sophisticated apartment with a prime location and elegant finishes...",
-    },
-    {
-        title: "Rustic mountain cabin 50 m²",
-        location: "74000 Annecy (Alps)",
-        price: "200,000 €",
-        pricePerM2: "4,000 €/m²",
-        image: "./Docs/Assets/Images/card1.jpeg",
-        tags: ["Mountain", "Rustic"],
-        photosCount: 9,
-        description: "Charming rustic cabin nestled in the mountains, ideal for nature lovers...",
-    }
-];
+
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+        {
+            title: "8-room house 235 m²",
+            location: "93100 Montreuil (Signac - Peach Ripe)",
+            price: "988,900 €",
+            pricePerM2: "4,208 €/m²",
+            image: "./Docs/Assets/Images/card1.jpeg",
+            tags: ["Video", "Exclusivity"],
+            photosCount: 17,
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit...",
+        },
+    ];
 
 
     // Function to generate cards dynamically
@@ -545,7 +793,9 @@
         document.getElementById('mapView').style.display = 'grid';
         document.getElementById('listView').style.display = 'none';
         document.getElementById('galleryView').style.display = 'none';
-        mapframe.style.display = "block"
+        if (innerWidth > 600) {
+            mapframe.style.display = "block"
+        }
     });
 
     list.addEventListener('click', function () {
@@ -573,6 +823,40 @@
         Purchase.classList.add("px-16")
         allDropdowns.classList.add("px-16")
     });
+
+    function showCriteria() {
+        // Get the "criteria" element and check its current display state
+        const criteriaElement = document.getElementById('criteria');
+        const mapViewElement = document.getElementById('mapView');
+        const listViewElement = document.getElementById('listView');
+        const galleryViewElement = document.getElementById('galleryView');
+        const plusIcn = document.getElementById('plusIcn');
+        const othersAndFooter = document.getElementById('othersAndFooter');
+
+        // Toggle the display of "criteria"
+        if (criteriaElement.style.display === 'none' || criteriaElement.style.display === '') {
+            // Show criteria and hide other views
+            criteriaElement.style.display = 'block';
+            plusIcn.style.rotate = '45deg';
+            mapViewElement.style.display = 'none';
+            listViewElement.style.display = 'none';
+            galleryViewElement.style.display = 'none';
+            othersAndFooter.style.display = 'none';
+        } else {
+            othersAndFooter.style.display = 'block';
+            criteriaElement.style.display = 'none';
+            plusIcn.style.rotate = '0deg';
+            mapViewElement.style.display = 'grid';
+        }
+    }
+
+    function toggleButton(button) {
+        button.classList.toggle('bg-blue-500');
+        button.classList.toggle('text-white');
+        button.classList.toggle('border-blue-500');
+        button.classList.toggle('border-zinc-300');
+        button.classList.toggle('text-gray-700');
+    }
 
 </script>
 
