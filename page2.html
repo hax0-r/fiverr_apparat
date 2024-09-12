@@ -20,7 +20,7 @@
 </style>
 
 <body>
-    <div class="z-20 w-full  transition-all" id="bgChangeNav">
+    <div class="z-20 w-full  transition-all bg-[#202632]" id="bgChangeNav">
         <div class="mx-auto  max-w-screen-xl px-6 lg:px-8 relative">
             <div class="relative flex justify-between h-20 space-x-10 w-full">
                 <div class="flex justify-start">
@@ -29,11 +29,11 @@
                     </a>
                 </div>
                 <ul class="hidden md:flex justify-center items-center gap-8 font-medium">
-                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Vendre</a></li>
-                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Louer</a></li>
-                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Acheter</a></li>
-                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Contacts</a></li>
-                    <li><a class="hover:text-[#000] text-black transition-all navUnderLine2" href="#">Temoignages</a>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Vendre</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Louer</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Acheter</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Contacts</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Temoignages</a>
                     </li>
                     <div class="flex items-center gap-4 text-xl text-black">
                         <i class="fa-brands fa-facebook-f"></i>
@@ -43,7 +43,7 @@
                 </ul>
                 <div id="openNav"
                     class="flex-shrink-0 cursor-pointer flex md:hidden px-2 py-3 items-center space-x-8 flex-1 justify-end justify-self-end">
-                    <i class="fa-solid fa-bars text-2xl text-[#000]"></i>
+                    <i class="fa-solid fa-bars text-2xl text-[#fff]"></i>
                 </div>
             </div>
         </div>
@@ -486,12 +486,13 @@
                         </div>
 
                         <!-- Map View Container -->
-                        <div class="grid mt-3 animiateFade px-2 grid-cols-2 bg-[#f1f3f4] gap-5 container mx-auto"
+                        <div class="md:grid hidden mt-3 animiateFade px-2 grid-cols-2 bg-[#f1f3f4] gap-5 container mx-auto"
                             id="mapView"></div>
 
                         <!-- List View Container -->
                         <div class="grid mt-3 animiateFade px-2 grid-cols-1 bg-[#f1f3f4] gap-5 container mx-auto pt-8"
-                            id="listView" style="display: none;"></div>
+                            id="listView" style="display: none;">
+                        </div>
 
                         <!-- Gallery View Container -->
                         <div class="md:grid mt-3 hidden animiateFade px-2 md:grid-cols-4 grid-cols-2 bg-[#f1f3f4] gap-5 container mx-auto"
@@ -622,6 +623,7 @@
     const allDropdowns = document.getElementById("allDropdowns")
     if (innerWidth < 600) {
         gallery.style.display = "none"
+        map.style.display = "none"
     }
 
 
@@ -710,7 +712,6 @@
     ];
 
 
-    // Function to generate cards dynamically
     function generateCards(view) {
         const mapViewContainer = document.getElementById('mapView');
         const listViewContainer = document.getElementById('listView');
@@ -790,38 +791,70 @@
 
     // View switching logic
     map.addEventListener('click', function () {
-        document.getElementById('mapView').style.display = 'grid';
-        document.getElementById('listView').style.display = 'none';
-        document.getElementById('galleryView').style.display = 'none';
-        if (innerWidth > 600) {
-            mapframe.style.display = "block"
+        if (window.innerWidth >= 600) {
+            document.getElementById('mapView').style.display = 'grid';
+            document.getElementById('listView').style.display = 'none';
+            document.getElementById('galleryView').style.display = 'none';
+            mapframe.style.display = "block";
+        } else {
+            document.getElementById('mapView').style.display = 'none';
+            document.getElementById('listView').style.display = 'grid';
+            document.getElementById('galleryView').style.display = 'none';
+            mapframe.style.display = "none";
         }
     });
+
+    function setInitialView() {
+        if (window.innerWidth < 600) {
+            document.getElementById('mapView').style.display = 'none';
+            document.getElementById('listView').style.display = 'grid';
+            document.getElementById('galleryView').style.display = 'none';
+            mapframe.style.display = "none";
+        } else {
+            document.getElementById('mapView').style.display = 'grid';
+            document.getElementById('listView').style.display = 'none';
+            document.getElementById('galleryView').style.display = 'none';
+            mapframe.style.display = "block";
+        }
+    }
+
+    setInitialView();
+
+    window.addEventListener('resize', setInitialView);
+
 
     list.addEventListener('click', function () {
         document.getElementById('mapView').style.display = 'none';
         document.getElementById('listView').style.display = 'grid';
         document.getElementById('galleryView').style.display = 'none';
-        mapframe.style.display = "none"
-        gridcols2cards.classList.remove("grid-cols-2")
-        gridcols2cards.classList.remove("grid-cols-4")
-        gridcols2cards.classList.add("grid-cols-1")
-        Purchase.classList.add("w-full")
-        Purchase.classList.add("px-16")
-        allDropdowns.classList.add("px-16")
+        mapframe.style.display = "none";
+        gridcols2cards.classList.remove("grid-cols-2");
+        gridcols2cards.classList.remove("grid-cols-4");
+        gridcols2cards.classList.add("grid-cols-1");
+        Purchase.classList.add("w-full");
+        Purchase.classList.add("px-16");
+        allDropdowns.classList.add("px-16");
     });
 
     gallery.addEventListener('click', function () {
-        document.getElementById('mapView').style.display = 'none';
-        document.getElementById('listView').style.display = 'none';
-        document.getElementById('galleryView').style.display = 'grid';
-        mapframe.style.display = "none"
-        gridcols2cards.classList.remove("grid-cols-2")
-        gridcols2cards.classList.remove("grid-cols-1")
-        gridcols2cards.classList.add("grid-cols-4")
-        Purchase.classList.add("w-full")
-        Purchase.classList.add("px-16")
-        allDropdowns.classList.add("px-16")
+        if (window.innerWidth >= 600) {
+            document.getElementById('mapView').style.display = 'none';
+            document.getElementById('listView').style.display = 'none';
+            document.getElementById('galleryView').style.display = 'grid';
+            mapframe.style.display = "none";
+            gridcols2cards.classList.remove("grid-cols-2");
+            gridcols2cards.classList.remove("grid-cols-1");
+            gridcols2cards.classList.add("grid-cols-4");
+            Purchase.classList.add("w-full");
+            Purchase.classList.add("px-16");
+            allDropdowns.classList.add("px-16");
+        } else {
+            // If the screen width is less than 600, show only listView
+            document.getElementById('mapView').style.display = 'none';
+            document.getElementById('listView').style.display = 'grid';
+            document.getElementById('galleryView').style.display = 'none';
+            mapframe.style.display = "none";
+        }
     });
 
     function showCriteria() {
@@ -849,6 +882,7 @@
             mapViewElement.style.display = 'grid';
         }
     }
+
 
     function toggleButton(button) {
         button.classList.toggle('bg-blue-500');
