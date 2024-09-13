@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPART CI</title>
+    <link rel="stylesheet" href="/Docs/Styles/Style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+</style>
+
+<body>
+    <div class=" bg-[#f1f3f4] p-4  flex items-center gap-5">
+        <button
+            class="font-semibold cursor-pointer hover:text-[#009db0] transition-all text-lg text-[#495960] flex items-center gap-1"><i
+                class="fa-solid fa-angle-left text-sm"></i>Return</button>
+        <button class=" text-zinc-400">Purchase</button>
+    </div>
+
+    <div class="flex items-start justify-between p-10 w-full">
+        <div class="flex flex-col gap-1">
+            <h2 class="font-bold text-2xl text-[#495960] ">Purchase of a 5-room house of 125 m²</h2>
+            <p class="text-zinc-500">93420 Villepinte (Vert Galant)</p>
+            <h3 class="text-zinc-400 text-sm"><span class="font-bold text-3xl text-[#009db0] ">410,000 € </span>3,280
+                €/m²
+            </h3>
+            <p class="text-zinc-500 flex gap-2 items-center">
+                <span class="w-[1.5px] h-5 bg-zinc-400"></span>
+                Fees payable by the seller
+            </p>
+            <div class="text-white flex py-1 items-center gap-2">
+                <p class="px-2 py-[1px] uppercase font-bold tracking-wide rounded-sm bg-[#495960]">Video</p>
+                <p class="px-2 py-[1px] uppercase font-bold tracking-wide rounded-sm bg-[#009db0]">Exclusivity</p>
+            </div>
+            <a href="#" class="flex items-center gap-2 text-[#009db0] font-semibold"><i
+                    class="fa-solid fa-caret-right"></i><span class="underline">Estimate your monthly payment</span></a>
+        </div>
+
+        <div class="flex flex-col justify-between h-[10rem]">
+            <div class="flex flex-col gap-2">
+                <div class="text-white flex items-center gap-2 ">
+                    <i
+                        class="fa-brands fa-facebook-f bg-[#495960] w-9 h-9 flex items-center justify-center text-center rounded-full "></i>
+                    <i
+                        class="fa-brands fa-telegram text-[#495960] w-9 h-9 text-4xl flex items-center justify-center text-center rounded-full "></i>
+                    <i
+                        class="fa-solid fa-print bg-[#495960] w-9 h-9 flex items-center justify-center text-center rounded-full "></i>
+                </div>
+                <button
+                    class="flex items-center text-center justify-center gap-2 tracking-wide rounded-sm bg-[#fba820] font-semibold text-white px-3 py-2"><i
+                        class="fa-solid fa-phone text-sm"></i>Phone</button>
+            </div>
+            <button class="font-semibold text-lg text-[#495960] flex items-center gap-1"><i
+                    class="fa-regular fa-heart"></i>Add to favorite</button>
+        </div>
+    </div>
+
+    <div class=" px-10 pb-10">
+        <div class="w-full h-[30rem] border-[#ea516c] border-b-0 border-8">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide2.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide3.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide2.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide3.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./Docs/Assets/Images/slide1.jpeg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="bg-[#ea516c] p-3 text-center text-white font-semibold tracking-wide">Blow of from the agency</p>
+        <p class="text-zinc-400 pt-2 ">Modified on 11 Sep 2024 | Ad Ref: 85055957</p>
+    </div>
+    
+    <div class="px-10 pb-20">
+        <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase">Description of this 2-room, 44 m² apartment for
+            sale</h1>
+        <p class="text-zinc-600">BOULOGNE NORD - Bright Apt 2P 44m2. Boulogne NORD - Exclusive Ideally located in the
+            heart of the city, between the Jaurès metro and the Place des Passages, close to shops and transport on the
+            3rd floor by elevator of a building up to date with its work, bright 2-room apartment of 44m2 comprising:
+            Entrance, living room with open kitchen, hallway with storage, one bedroom, bathroom and separate toilet.
+            Agency fees included of 4% including tax payable by the purchaser. Energy class D, Climate class D.
+            Estimated average amount of annual energy expenditure for standard use, established from energy prices on
+            January 1, 2021: 580 to 820 euros.</p>
+
+        <form class="bg-[#f1f3f4] p-5 mt-8 rounded-sm ">
+            <h2 class="text-[#495960] text-xl text-center pb-5 font-semibold">I would like to be contacted by the agency
+            </h2>
+            <div class="w-full grid grid-cols-2 gap-2">
+                <input type="text" placeholder="Your First Name" class="p-2 border-2 w-full rounded-sm ">
+                <input type="text" placeholder="Your Name*" class="p-2 border-2 w-full rounded-sm ">
+                <input type="text" placeholder="Your Email*" class="p-2 border-2 w-full rounded-sm ">
+
+                <div class="">
+                    <div class="flex items-center relative">
+                        <button id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone"
+                            class=" z-10 inline-flex items-center bg-white  p-3 px-2 border-r-0  border-2  rounded-sm"
+                            type="button">
+                            <svg fill="none" aria-hidden="true" class="h-4 w-4" viewBox="0 0 20 15">
+                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                    maskUnits="userSpaceOnUse">
+                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                </mask>
+                                <g mask="url(#a)">
+                                    <path fill="#D02F44" fill-rule="evenodd"
+                                        d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                    <g filter="url(#filter0_d_343_121520)">
+                                        <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                                            d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933" y1="1.433"
+                                        y2="6.1" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#fff" />
+                                        <stop offset="1" stop-color="#F0F0F0" />
+                                    </linearGradient>
+                                    <filter id="filter0_d_343_121520" width="6.533" height="5.667" x=".933" y="1.433"
+                                        color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                        <feOffset dy="1" />
+                                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_343_121520" />
+                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <div id="dropdown-phone" style="display: none;"
+                            class="z-10 animiateFade absolute  top-12 bg-white divide-y divide-gray-100 rounded-lg shadow w-52 ">
+                            <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdown-phone-button">
+                                <li>
+                                    <button type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 "
+                                        role="menuitem">
+                                        <span class="inline-flex items-center">
+                                            <svg fill="none" aria-hidden="true" class="h-4 w-4 me-2"
+                                                viewBox="0 0 20 15">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#D02F44" fill-rule="evenodd"
+                                                        d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                                    <g filter="url(#filter0_d_343_121520)">
+                                                        <path fill="url(#paint0_linear_343_121520)" fill-rule="evenodd"
+                                                            d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                                            clip-rule="evenodd" />
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_343_121520" x1=".933" x2=".933"
+                                                        y1="1.433" y2="6.1" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#fff" />
+                                                        <stop offset="1" stop-color="#F0F0F0" />
+                                                    </linearGradient>
+                                                    <filter id="filter0_d_343_121520" width="6.533" height="5.667"
+                                                        x=".933" y="1.433" color-interpolation-filters="sRGB"
+                                                        filterUnits="userSpaceOnUse">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                        <feOffset dy="1" />
+                                                        <feColorMatrix
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                        <feBlend in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_343_121520" />
+                                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_343_121520"
+                                                            result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                            United States (+1)
+                                        </span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">
+                                        <span class="inline-flex items-center">
+                                            <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                                    <path fill="#fff" fill-rule="evenodd"
+                                                        d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                                                        clip-rule="evenodd" />
+                                                    <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667"
+                                                        d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093" />
+                                                    <path fill="#E6273E" fill-rule="evenodd"
+                                                        d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z"
+                                                        clip-rule="evenodd" />
+                                                </g>
+                                            </svg>
+                                            United Kingdom (+44)
+                                        </span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">
+                                        <span class="inline-flex items-center">
+                                            <svg class="h-4 w-4 me-2" fill="none" viewBox="0 0 20 15"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                                    <path fill="#fff" stroke="#fff" stroke-width=".667"
+                                                        d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z" />
+                                                    <path fill="url(#paint0_linear_374_135177)" fill-rule="evenodd"
+                                                        d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="url(#paint1_linear_374_135177)" fill-rule="evenodd"
+                                                        d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z"
+                                                        clip-rule="evenodd" />
+                                                    <path fill="#fff" fill-rule="evenodd"
+                                                        d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z"
+                                                        clip-rule="evenodd" />
+                                                </g>
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_374_135177" x1="0" x2="0" y1=".5"
+                                                        y2="7.5" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#fff" />
+                                                        <stop offset="1" stop-color="#F0F0F0" />
+                                                    </linearGradient>
+                                                    <linearGradient id="paint1_linear_374_135177" x1="0" x2="0" y1=".5"
+                                                        y2="7.033" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#FF2E3B" />
+                                                        <stop offset="1" stop-color="#FC0D1B" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            Australia (+61)
+                                        </span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">
+                                        <span class="inline-flex items-center">
+                                            <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#262626" fill-rule="evenodd"
+                                                        d="M0 5.167h19.6V.5H0v4.667z" clip-rule="evenodd" />
+                                                    <g filter="url(#filter0_d_374_135180)">
+                                                        <path fill="#F01515" fill-rule="evenodd"
+                                                            d="M0 9.833h19.6V5.167H0v4.666z" clip-rule="evenodd" />
+                                                    </g>
+                                                    <g filter="url(#filter1_d_374_135180)">
+                                                        <path fill="#FFD521" fill-rule="evenodd"
+                                                            d="M0 14.5h19.6V9.833H0V14.5z" clip-rule="evenodd" />
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0"
+                                                        y="5.167" color-interpolation-filters="sRGB"
+                                                        filterUnits="userSpaceOnUse">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                        <feOffset />
+                                                        <feColorMatrix
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                        <feBlend in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_374_135180" />
+                                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                            result="shape" />
+                                                    </filter>
+                                                    <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0"
+                                                        y="9.833" color-interpolation-filters="sRGB"
+                                                        filterUnits="userSpaceOnUse">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                        <feOffset />
+                                                        <feColorMatrix
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                        <feBlend in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_374_135180" />
+                                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                            result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                            Germany (+49)
+                                        </span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">
+                                        <span class="inline-flex items-center">
+                                            <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                                                <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff"
+                                                    stroke="#F5F5F5" stroke-width=".5" rx="1.75" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.1" height="13.5" x=".25" y=".75" fill="#fff"
+                                                        stroke="#fff" stroke-width=".5" rx="1.75" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#F44653" d="M13.067.5H19.6v14h-6.533z" />
+                                                    <path fill="#1035BB" fill-rule="evenodd" d="M0 14.5h6.533V.5H0v14z"
+                                                        clip-rule="evenodd" />
+                                                </g>
+                                            </svg>
+                                            France (+33)
+                                        </span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button"
+                                        class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">
+                                        <span class="inline-flex items-center">
+                                            <svg class="w-4 h-4 me-2" fill="none" viewBox="0 0 20 15">
+                                                <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                <mask id="a" style="mask-type:luminance" width="20" height="15" x="0"
+                                                    y="0" maskUnits="userSpaceOnUse">
+                                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                                </mask>
+                                                <g mask="url(#a)">
+                                                    <path fill="#262626" fill-rule="evenodd"
+                                                        d="M0 5.167h19.6V.5H0v4.667z" clip-rule="evenodd" />
+                                                    <g filter="url(#filter0_d_374_135180)">
+                                                        <path fill="#F01515" fill-rule="evenodd"
+                                                            d="M0 9.833h19.6V5.167H0v4.666z" clip-rule="evenodd" />
+                                                    </g>
+                                                    <g filter="url(#filter1_d_374_135180)">
+                                                        <path fill="#FFD521" fill-rule="evenodd"
+                                                            d="M0 14.5h19.6V9.833H0V14.5z" clip-rule="evenodd" />
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <filter id="filter0_d_374_135180" width="19.6" height="4.667" x="0"
+                                                        y="5.167" color-interpolation-filters="sRGB"
+                                                        filterUnits="userSpaceOnUse">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                        <feOffset />
+                                                        <feColorMatrix
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                        <feBlend in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_374_135180" />
+                                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                            result="shape" />
+                                                    </filter>
+                                                    <filter id="filter1_d_374_135180" width="19.6" height="4.667" x="0"
+                                                        y="9.833" color-interpolation-filters="sRGB"
+                                                        filterUnits="userSpaceOnUse">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                                        <feOffset />
+                                                        <feColorMatrix
+                                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                                                        <feBlend in2="BackgroundImageFix"
+                                                            result="effect1_dropShadow_374_135180" />
+                                                        <feBlend in="SourceGraphic" in2="effect1_dropShadow_374_135180"
+                                                            result="shape" />
+                                                    </filter>
+                                                </defs>
+                                            </svg>
+                                            Germany (+49)
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="phone-input" class="mb-2 text-sm font-medium text-gray-900 sr-only">Your Phone
+                        </label>
+                        <div class="relative w-full">
+                            <input type="text" id="phone-input"
+                                class="block p-2.5 w-full z-20 text-sm text-gray-900  rounded-e-lg border-s-0 border "
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your Phone*" required />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 grid grid-cols-2 gap-4">
+                <div class="flex items-center gap-3">
+                    <p class="text-sm text-zinc-500">Do you have a property to sell?</p>
+                    <button
+                        class="w-14 rounded-sm font-semibold cursor-pointer text-[#495960] h-10 bg-white flex items-center justify-center border">Yes</button>
+                    <button
+                        class="w-14 rounded-sm font-semibold cursor-pointer text-[#495960] h-10 bg-white flex items-center justify-center border">No</button>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" class="size-4">
+                    <p class="text-sm text-zinc-500">I do not wish to receive similar properties or advice related to my
+                        real estate search from Bien'ici.</p>
+                </div>
+            </div>
+
+            <p class="text-sm text-zinc-500 text-center py-5">By clicking on the button below, I acknowledge having read
+                and accept without reservation the <a href="#" class="text-[#009db0]">Legal Notices and General
+                    Conditions</a> of Use of the site.</p>
+
+            <button
+                class=" w-full text-center tracking-wide rounded-sm bg-[#fba820] font-semibold text-white px-3 py-2">SEND
+                MY REQUEST</button>
+            <p class="text-sm text-zinc-500 text-center pt-5">* Required fields.</p>
+            <p id="showInformation"
+                class="text-sm text-[#009db0] text-center transition-all cursor-pointer hover:text-[#009eb0b0]">* Show
+                information about the processing of my personal data</p>
+            <p id="informationShowed" style="display: none;" class="text-sm animiateFade text-zinc-500 pt-3">
+                Bien'ici, as data controller, implements a processing of personal data for the purpose of putting you in
+                contact with the partner issuing the advertisement in order to receive additional information or
+                photographs or to make an appointment with the latter. By completing the form, you agree that we send
+                your contact details to said partner to benefit from these services and exclusively for this purpose.
+                This processing is based on the execution of the <a href="#" class="text-[#009db0]"> General Conditions
+                    of Use</a> . The processing of data
+                received by the partner issuing this advertisement is done under its own responsibility, in accordance
+                with its own data protection policy, in particular if you subsequently decide to buy or rent the
+                property that is the subject of the advertisement. Your data is not transferred to other Bien'ici
+                partners. The data is kept by Bien'ici for the time necessary to achieve said purposes, increased where
+                applicable by the applicable legal limitation periods. <br><br>
+
+                Unless you object, your data may also be used on the basis of our legitimate interest, to send you
+                suggestions of properties that meet criteria similar to those of the advertisements for which you are
+                making a request to be put in touch with this advertisement, by email and/or SMS. When you first contact
+                us by SMS, you will be asked for your consent in order to continue any contact with the partner
+                concerned. You can use the unsubscribe link or process included in each Bien'ici communication at any
+                time. <br><br>
+
+                You have the right to access, rectify, object, limit, erase, and portability under the legal conditions
+                with Bien'ici. You also have the right to formulate specific and general directives concerning the
+                retention, erasure and communication of your data post mortem. These rights can be exercised with the
+                company Bien'ici at the address of its head office at 43-47 Avenue de la Grande Armée, 75016 Paris, or
+                at the following email address: <a href="#" class="text-[#009db0]"> dpo@bienici.com</a> . You may be
+                asked to provide proof of identity. You can
+                register for free on the telephone canvassing opt-out list, provided for in Article L223-1 of the
+                Consumer Code, on the website <a href="#" class="text-[#009db0]"> www.bloctel.gouv.fr </a> or by mail
+                addressed to Société Opposetel, Service
+                Bloctel – Bâtiment A1 2-98 bd Victor Hugo 92110 Clichy. For more information, consult <a href="#"
+                    class="text-[#009db0]">our privacy
+                    policy</a>.
+            </p>
+
+        </form>
+
+        <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase mt-8">About this 2-room, 44 m² apartment for sale in
+            Boulogne-Billancourt</h1>
+
+        <div class="grid grid-cols-2 gap-2 mt-3">
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Price: €385,000, fees: 4.05% including tax payable
+                by the purchaser (€370,000 excluding fees)</p>
+            <a href="#" class="flex items-center gap-2 text-[#009db0] font-semibold bg-[#f1f3f4] p-3 px-4 rounded-sm"><i
+                    class="fa-solid fa-caret-right"></i><span class="hover:underline">Estimate your monthly
+                    payment</span></a>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">44 m²</p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">2 rooms</p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">1 bedroom
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Date of completion of the DPE: July 4, 2024
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">No work required
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">West Exposure
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Heating: Central
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Fiber: deployed*
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">3rd floor
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Elevator
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Digicode
+            </p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Intercom
+            </p>
+        </div>
+        <p class="text-sm text-zinc-500 mt-4 mb-2">* Public data provided by ARCEP</p>
+        <p class="text-zinc-500 ">Information on the risks to which this property is exposed is available on the
+            Géorisques website: <a href="www.georisques.gouv.fr" target="_blank" class="text-[#009db0]">www.georisques.gouv.fr</a></p>
+
+
+        <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase mt-5">Energy Performance Diagnostic</h1>
+        <div class="mt-4">
+            
+        </div>
+        <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase mt-5">Partner services</h1>
+
+        <div class="mt-4">
+            <div class="inline-flex bg-[#f1f3f4] p-5 w-full max-w-[46rem] justify-between">
+                <div class="flex items-center gap-5">
+                    <img src="/Docs/Assets/Images/partner1.svg" alt="">
+                    <div class="text-[#495960]">
+                        <h2 class="font-semibold ">Need to finance your purchase?</h2>
+                        <p>Save on the cost of your loan thanks to our partner Crédit Agricole</p>
+                    </div>
+                </div>
+                <button class="bg-[#495960] text-white py-1 font-semibold tracking-wide px-5 rounded-sm">Make a
+                    simulation</button>
+            </div>
+            <div class="inline-flex bg-[#f1f3f4] p-5 w-full max-w-[46rem] justify-between mt-2">
+                <div class="flex items-center gap-5">
+                    <img src="/Docs/Assets/Images/partner2.svg" alt="">
+                    <div class="text-[#495960]">
+                        <h2 class="font-semibold ">Need to move?</h2>
+                        <p>Get moving quotes!</p>
+                    </div>
+                </div>
+                <button class="bg-[#495960] text-white py-1 font-semibold tracking-wide px-5 rounded-sm">Make a
+                    simulation</button>
+            </div>
+        </div>
+
+
+        <h1 class="pb-1 text-[#fbba20] text-2xl font-bold mt-8 uppercase">About this ad</h1>
+
+        <div class="grid grid-cols-2 gap-2 mt-3">
+            <p class="bg-[#009db0] text-white p-3 px-4 rounded-sm">Exclusive mandate</p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Ad Ref.: 85055957</p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Posted over 2 months ago</p>
+            <p class="bg-[#f1f3f4] text-zinc-500 p-3 px-4 rounded-sm">Modified on September 11, 2024</p>
+            <a href="#" class="flex items-center gap-2 text-[#009db0] font-semibold bg-[#f1f3f4] p-3 px-4 rounded-sm"><i
+                    class="fa-solid fa-triangle-exclamation"></i><span class="hover:underline">Report an anomaly on this
+                    ad</span></a>
+            <a href="#" class="text-[#009db0] font-semibold bg-[#f1f3f4] p-3 px-4 rounded-sm"><span
+                    class="hover:underline">Agency scales</span></a>
+        </div>
+
+
+        <h1 class="text-[#fbba20] text-2xl font-bold uppercase mt-8">About the agency</h1>
+
+        <div class="mt-4">
+            <div class="inline-flex  w-full max-w-[46rem] justify-between">
+                <div class="flex items-center gap-5">
+                    <img src="/Docs/Assets/Images/agency.png" alt="">
+                    <div class="text-[#495960]">
+                        <h2 class="font-semibold ">APARTMENTS & HOUSES - Ken VIDAL</h2>
+                        <p class="text-sm mb-2">57-59 Boulevard Jean-Jaurès - 92100 Boulogne-Billancourt</p>
+                        <a href="" class="text-sm text-[#009db0] hover:underline ">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-[#fbba20] text-2xl font-bold uppercase mt-8">About the neighborhood</h1>
+
+        <div class="mt-4">
+            <div class="relative">
+                <img src="/Docs/Assets/Images/neighborhood.jpg"
+                    class="w-full brightness-75 h-60 rounded-sm object-cover" alt="">
+                <div class=" absolute bottom-5 left-5">
+                    <h2 class="text-white text-lg font-normal uppercase">Buy an apartment in the neighborhood</h2>
+                    <h2 class="text-white text-xl font-bold uppercase">Jean Jaurès - Queen, in Boulogne-Billancourt</h2>
+                </div>
+                <a href="#"
+                    class="text-zinc-500 bg-white absolute top-5 right-5 px-3 py-1.5 rounded-sm hover:text-[#009db0] transition-all text-xs">View
+                    the neighborhood on the map </a>
+            </div>
+            <p class="text-zinc-500 bg-[#f1f3f4] p-5">
+
+                <a href="" class="text-[#009db0] hover:underline ">Jean Jaurès - Reine</a> is a district of <a href=""
+                    class="text-[#009db0] hover:underline ">the city of Boulogne-Billancourt</a> located in the <a
+                    href="" class="text-[#009db0] hover:underline ">Hauts-de-Seine department (92)</a> . The <strong
+                    class="text-zinc-600">13,068 inhabitants</strong> of this district (out of the <strong
+                    class="text-zinc-600">117,128</strong>in the municipality) have
+                an average age of <strong class="text-zinc-600">40 years</strong> . The socio-professional category most
+                represented in the district is that of <strong class="text-zinc-600">executives</strong> . In terms of
+                real estate, the dwellings in the district are divided into<strong class="text-zinc-600">2%
+                    houses</strong> and <strong class="text-zinc-600">98% apartments</strong> . The share of social
+                housing here is <strong class="text-zinc-600">1%</strong> . The housing tax amounts to <strong
+                    class="text-zinc-600">11%</strong> and the property
+                tax to <strong class="text-zinc-600">7%</strong> (on average for the department: housing tax at <strong
+                    class="text-zinc-600">19%</strong> , property tax at<strong class="text-zinc-600">7%</strong> ). As
+                for the
+                household waste collection tax, it is <strong class="text-zinc-600">4%</strong> .
+            </p>
+        </div>
+
+        <h1 class="text-[#fbba20] text-2xl font-bold uppercase mt-8">In the neighborhood</h1>
+
+        <div class="mt-4 flex flex-col gap-5">
+            <div class="inline-flex  w-full justify-between max-w-4xl">
+                <div class="flex items-center w-full gap-5">
+                    <div class="w-32 h-28 bg-[#f07eb8] text-white flex items-center justify-center rounded-sm">
+                        <i class="fa-solid fa-martini-glass text-3xl"></i>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex items-center justify-between mb-2 w-full">
+                            <h2 class="font-bold text-zinc-700 text-lg ">How about we go out?</h2>
+                            <div class="bg-zinc-200 overflow-hidden w-28 h-1.5 rounded-sm relative">
+                                <span class="w-full bg-[#f07eb8] h-1.5 absolute top-0 left-0"></span>
+                            </div>
+                        </div>
+                        <p class="text-zinc-600">Bar ( <span class="font-bold text-zinc-700">1</span> )Restaurant (
+                            <span class="font-bold" text-zinc-700>37</span> )Cinema ( <span
+                                class="font-bold text-zinc-700">1</span> )Park, Garden and Square ( <span
+                                class="font-bold text-zinc-700">2</span> )Grounds and Gym ( <span
+                                class="font-bold text-zinc-700">7</span> )
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inline-flex  w-full justify-between max-w-4xl">
+                <div class="flex items-center w-full gap-5">
+                    <div class="w-32 h-28 bg-[#fdb82a] text-white flex items-center justify-center rounded-sm">
+                        <i class="fa-solid fa-martini-glass text-3xl"></i>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex items-center justify-between mb-2 w-full">
+                            <h2 class="font-bold text-zinc-700 text-lg ">Don't forget to go shopping</h2>
+                            <div class="bg-zinc-200 overflow-hidden w-28 h-1.5 rounded-sm relative">
+                                <span class="w-[80%] bg-[#fdb82a] h-1.5 absolute top-0 left-0"></span>
+                            </div>
+                        </div>
+                        <p class="text-zinc-600">
+                            Bank ( <span class="font-bold text-zinc-700"> 11</span> )Butchery ( <span
+                                class="font-bold text-zinc-700"> 3</span> )Bakery ( <span
+                                class="font-bold text-zinc-700"> 8</span> )Post office ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Neighborhood market ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Press and Tobacco ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Minimarket ( <span
+                                class="font-bold text-zinc-700"> 3</span> )Supermarket and Hypermarket ( <span
+                                class="font-bold text-zinc-700"> 9</span> )
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="inline-flex  w-full justify-between max-w-4xl">
+                <div class="flex items-center w-full gap-5">
+                    <div class="w-32 h-28 bg-[#a18565] text-white flex items-center justify-center rounded-sm">
+                        <i class="fa-solid fa-martini-glass text-3xl"></i>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex items-center justify-between mb-2 w-full">
+                            <h2 class="font-bold text-zinc-700 text-lg ">It's time to go to school</h2>
+                            <div class="bg-zinc-200 overflow-hidden w-28 h-1.5 rounded-sm relative">
+                                <span class="w-full bg-[#a18565] h-1.5 absolute top-0 left-0"></span>
+                            </div>
+                        </div>
+                        <p class="text-zinc-600">College ( <span class="font-bold text-zinc-700"> 2</span> )Kindergarten
+                            ( <span class="font-bold text-zinc-700"> 3</span> )Primary school ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Nursery ( <span
+                                class="font-bold text-zinc-700"> 2</span> )</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inline-flex  w-full justify-between max-w-4xl">
+                <div class="flex items-center w-full gap-5">
+                    <div class="w-32 h-28 bg-[#0ea4cd] text-white flex items-center justify-center rounded-sm">
+                        <i class="fa-solid fa-martini-glass text-3xl"></i>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex items-center justify-between mb-2 w-full">
+                            <h2 class="font-bold text-zinc-700 text-lg ">And what about transport?</h2>
+                            <div class="bg-zinc-200 overflow-hidden w-28 h-1.5 rounded-sm relative">
+                                <span class="w-full bg-[#0ea4cd] h-1.5 absolute top-0 left-0"></span>
+                            </div>
+                        </div>
+                        <p class="text-zinc-600">Bus (5272123SUBB)Autolib' ( <span class="font-bold text-zinc-700">
+                                3</span> )Bike rental ( <span class="font-bold text-zinc-700"> 4</span> )Parking ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Gas station ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Vélib' ( <span
+                                class="font-bold text-zinc-700"> 4</span> )</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inline-flex  w-full justify-between max-w-4xl">
+                <div class="flex items-center w-full gap-5">
+                    <div class="w-32 h-28 bg-[#43b36e] text-white flex items-center justify-center rounded-sm">
+                        <i class="fa-solid fa-martini-glass text-3xl"></i>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex items-center justify-between mb-2 w-full">
+                            <h2 class="font-bold text-zinc-700 text-lg ">Stay healthy</h2>
+                            <div class="bg-zinc-200 overflow-hidden w-28 h-1.5 rounded-sm relative">
+                                <span class="w-[50%] bg-[#43b36e] h-1.5 absolute top-0 left-0"></span>
+                            </div>
+                        </div>
+                        <p class="text-zinc-600">College ( <span class="font-bold text-zinc-700"> 2</span> )Kindergarten
+                            ( <span class="font-bold text-zinc-700"> 3</span> )Primary school ( <span
+                                class="font-bold text-zinc-700"> 1</span> )Nursery ( <span
+                                class="font-bold text-zinc-700"> 2</span> )</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 3,
+        slidesPerView: 8,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+
+    const dropdownPhone = document.getElementById("dropdown-phone")
+    const dropdownPhoneButton = document.getElementById("dropdown-phone-button")
+    const showInformation = document.getElementById("showInformation")
+    const informationShowed = document.getElementById("informationShowed")
+    dropdownPhoneButton.addEventListener('click', () => {
+        dropdownPhone.style.display = dropdownPhone.style.display === "block" ? "none" : "block";
+    })
+    showInformation.addEventListener('click', () => {
+        informationShowed.style.display = informationShowed.style.display === "block" ? "none" : "block";
+    })
+</script>
+
+</html>
