@@ -21,14 +21,79 @@
 </style>
 
 <body>
-    <div class=" bg-[#f1f3f4] p-4  flex items-center gap-5">
+
+
+    <!-- navbar -->
+
+    <div class="z-20 w-full  transition-all bg-[#202632]" id="bgChangeNav">
+        <div class="mx-auto  max-w-screen-xl px-6 lg:px-8 relative">
+            <div class="relative flex justify-between h-20 space-x-10 w-full">
+                <div class="flex justify-start">
+                    <a class="flex flex-shrink-0 items-center" href="./slide.html">
+                        <img class="block h-[6rem] w-auto" src="./Docs/Assets/Images/logo.png">
+                    </a>
+                </div>
+                <ul class="hidden md:flex justify-center items-center gap-8 font-medium">
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Vendre</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Louer</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Acheter</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Contacts</a></li>
+                    <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Temoignages</a>
+                    </li>
+                    <div class="flex items-center gap-4 text-xl text-black">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin-in text-[1.4rem]"></i>
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </div>
+                </ul>
+                <div id="openNav"
+                    class="flex-shrink-0 cursor-pointer flex md:hidden px-2 py-3 items-center space-x-8 flex-1 justify-end justify-self-end">
+                    <i class="fa-solid fa-bars text-2xl text-[#fff]"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="responsive overflow-hidden relative transition-all">
+        <div id="resNav" class="w-[0rem] overflow-hidden bg-black transition-all h-screen fixed top-0 left-0 z-50">
+            <h1 id="closenNav" class="absolute cursor-pointer right-10 top-8 text-2xl font-bold"><i
+                    class="fa-solid fa-xmark text-white"></i></h1>
+            <div class="p-5 ">
+                <img src="./Docs/Assets/Images/logo.png" class="h-16" alt="">
+                <ul class="flex flex-col gap-2 mt-10">
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link </a>
+                    </li>
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link</a>
+                    </li>
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link </a>
+                    </li>
+                    <li
+                        class="text-white text-xl hover:bg-[#fff] hover:text-black  transition-all rounded-lg hover:shadow-md p-3">
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+
+
+
+    <div class=" bg-[#f1f3f4] p-4  flex items-center gap-5 mt-5">
         <button
             class="font-semibold cursor-pointer hover:text-[#009db0] transition-all text-lg text-[#495960] flex items-center gap-1"><i
                 class="fa-solid fa-angle-left text-sm"></i>Return</button>
         <button class=" text-zinc-400">Purchase</button>
     </div>
 
-    <div class="flex items-start justify-between p-10 w-full">
+    <div class="flex items-start md:flex-row flex-col justify-between md:p-10 p-5 w-full">
         <div class="flex flex-col gap-1">
             <h2 class="font-bold text-2xl text-[#495960] ">Purchase of a 5-room house of 125 m²</h2>
             <p class="text-zinc-500">93420 Villepinte (Vert Galant)</p>
@@ -47,7 +112,7 @@
                     class="fa-solid fa-caret-right"></i><span class="underline">Estimate your monthly payment</span></a>
         </div>
 
-        <div class="flex flex-col justify-between h-[10rem]">
+        <div class="flex flex-col justify-between md:h-[10rem] mt-5 md:mt-0">
             <div class="flex flex-col gap-2">
                 <div class="text-white flex items-center gap-2 ">
                     <i
@@ -66,8 +131,8 @@
         </div>
     </div>
 
-    <div class=" px-10 pb-10">
-        <div class="w-full h-[30rem] border-[#ea516c] border-b-0 border-8">
+    <div class=" md:px-10 px-5 md:pb-10 pb-5">
+        <div class="w-full md:h-[30rem] h-[20rem] border-[#ea516c] border-b-0 border-8">
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -142,8 +207,8 @@
         <p class="bg-[#ea516c] p-3 text-center text-white font-semibold tracking-wide">Blow of from the agency</p>
         <p class="text-zinc-400 pt-2 ">Modified on 11 Sep 2024 | Ad Ref: 85055957</p>
     </div>
-    
-    <div class="px-10 pb-20">
+
+    <div class="md:px-10 px-5 md:pb-20 pb-10">
         <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase">Description of this 2-room, 44 m² apartment for
             sale</h1>
         <p class="text-zinc-600">BOULOGNE NORD - Bright Apt 2P 44m2. Boulogne NORD - Exclusive Ideally located in the
@@ -157,7 +222,7 @@
         <form class="bg-[#f1f3f4] p-5 mt-8 rounded-sm ">
             <h2 class="text-[#495960] text-xl text-center pb-5 font-semibold">I would like to be contacted by the agency
             </h2>
-            <div class="w-full grid grid-cols-2 gap-2">
+            <div class="w-full grid md:grid-cols-2 grid-cols-1 gap-2">
                 <input type="text" placeholder="Your First Name" class="p-2 border-2 w-full rounded-sm ">
                 <input type="text" placeholder="Your Name*" class="p-2 border-2 w-full rounded-sm ">
                 <input type="text" placeholder="Your Email*" class="p-2 border-2 w-full rounded-sm ">
@@ -482,7 +547,7 @@
                 </div>
             </div>
 
-            <div class="mt-3 grid grid-cols-2 gap-4">
+            <div class="md:mt-3 grid md:grid-cols-2 grid-cols-1 mt-5 gap-4">
                 <div class="flex items-center gap-3">
                     <p class="text-sm text-zinc-500">Do you have a property to sell?</p>
                     <button
@@ -578,36 +643,67 @@
         </div>
         <p class="text-sm text-zinc-500 mt-4 mb-2">* Public data provided by ARCEP</p>
         <p class="text-zinc-500 ">Information on the risks to which this property is exposed is available on the
-            Géorisques website: <a href="www.georisques.gouv.fr" target="_blank" class="text-[#009db0]">www.georisques.gouv.fr</a></p>
+            Géorisques website: <a href="www.georisques.gouv.fr" target="_blank"
+                class="text-[#009db0]">www.georisques.gouv.fr</a></p>
 
 
         <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase mt-5">Energy Performance Diagnostic</h1>
-        <div class="mt-4">
-            
+        <div class="mt-4 grid md:grid-cols-2 grid-cols-1 gap-5">
+            <div class="energy-performance">
+                <h2 class="text-[#495960] font-bold pb-3">Energy Performance</h2>
+                <img src="/Docs/Assets/Images/ss (4).png" class="max-w-sm w-full animiateFade default-img" alt="">
+                <img src="/Docs/Assets/Images/ss (2).png" class="max-w-sm w-full animiateFade full-diagram hidden"
+                    alt="">
+            </div>
+            <div class="energy-performance">
+                <h2 class="text-[#495960] font-bold pb-3">Climate performance</h2>
+                <img src="/Docs/Assets/Images/ss (1).png" class="max-w-sm w-full animiateFade default-img" alt="">
+                <img src="/Docs/Assets/Images/ss (3).png" class="max-w-sm w-full animiateFade full-diagram hidden"
+                    alt="">
+            </div>
         </div>
+
+        <p class="text-sm text-zinc-500">
+            Diagnosis carried out after July 1, 2021
+            <button class="text-[#009db0] show-full-diagram-btn">(show full diagram)</button>
+        </p>
+        <h3 class="text-sm text-zinc-500 font-semibold mt-5">
+            Estimated annual energy costs for standard use:
+        </h3>
+        <p class="text-sm text-zinc-500">
+            Between €580 and €820 per year <br>
+            <i>Average energy prices indexed to: information not communicated</i>
+        </p>
+
+
+
+
+
         <h1 class="pb-1 text-[#fbba20] text-2xl font-bold uppercase mt-5">Partner services</h1>
 
         <div class="mt-4">
-            <div class="inline-flex bg-[#f1f3f4] p-5 w-full max-w-[46rem] justify-between">
-                <div class="flex items-center gap-5">
+            <div class="inline-flex bg-[#f1f3f4] md:flex-row flex-col p-5 w-full max-w-[46rem] justify-between">
+                <div class="flex items-center  gap-5">
                     <img src="/Docs/Assets/Images/partner1.svg" alt="">
                     <div class="text-[#495960]">
                         <h2 class="font-semibold ">Need to finance your purchase?</h2>
                         <p>Save on the cost of your loan thanks to our partner Crédit Agricole</p>
                     </div>
                 </div>
-                <button class="bg-[#495960] text-white py-1 font-semibold tracking-wide px-5 rounded-sm">Make a
+                <button
+                    class="bg-[#495960] text-white py-1 font-semibold mt-4 md:mt-0 tracking-wide px-5 rounded-sm">Make a
                     simulation</button>
             </div>
-            <div class="inline-flex bg-[#f1f3f4] p-5 w-full max-w-[46rem] justify-between mt-2">
-                <div class="flex items-center gap-5">
+            <div class="inline-flex bg-[#f1f3f4] md:flex-row flex-col p-5 w-full max-w-[46rem] justify-between mt-2">
+                <div class="flex items-center  gap-5">
                     <img src="/Docs/Assets/Images/partner2.svg" alt="">
                     <div class="text-[#495960]">
                         <h2 class="font-semibold ">Need to move?</h2>
                         <p>Get moving quotes!</p>
                     </div>
                 </div>
-                <button class="bg-[#495960] text-white py-1 font-semibold tracking-wide px-5 rounded-sm">Make a
+                <button
+                    class="bg-[#495960] text-white py-1 font-semibold mt-4 md:mt-0 tracking-wide px-5 rounded-sm">Make a
                     simulation</button>
             </div>
         </div>
@@ -786,7 +882,19 @@
             </div>
         </div>
     </div>
-    
+    <!-- footer -->
+
+    <div class="bg-[#202632] py-5 px-5 text-white text-center w-full mt-1">
+        <ul class="hidden md:flex justify-center items-center gap-6  pb-5">
+            <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Vendre</a></li>
+            <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Louer</a></li>
+            <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Acheter</a></li>
+            <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Contacts</a></li>
+            <li><a class="hover:text-[#fff] text-white transition-all navUnderLine" href="#">Temoignages</a>
+            </li>
+        </ul>
+        <p class="text-sm opacity-75">Lorem ipsum dolor sit.</p>
+    </div>
 
     </div>
 
@@ -795,6 +903,17 @@
 
 
 <script>
+
+    const openNav = document.getElementById(`openNav`)
+    const closenNav = document.getElementById(`closenNav`)
+    const resNav = document.getElementById(`resNav`)
+
+    openNav.addEventListener('click', () => {
+        resNav.style.width = "22rem"
+    })
+    closenNav.addEventListener('click', () => {
+        resNav.style.width = "0rem"
+    })
 
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 3,
@@ -823,6 +942,15 @@
     showInformation.addEventListener('click', () => {
         informationShowed.style.display = informationShowed.style.display === "block" ? "none" : "block";
     })
+
+    document.querySelector('.show-full-diagram-btn').addEventListener('click', function () {
+        document.querySelectorAll('.energy-performance').forEach(function (section) {
+            section.querySelector('.default-img').classList.toggle('hidden');
+            section.querySelector('.full-diagram').classList.toggle('hidden');
+        });
+
+        this.textContent = this.textContent.includes('show') ? '(hide full diagram)' : '(show full diagram)';
+    });
 </script>
 
 </html>

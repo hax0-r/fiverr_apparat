@@ -633,6 +633,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -643,6 +644,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -653,6 +655,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -663,6 +666,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -673,6 +677,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -683,6 +688,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -693,6 +699,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -703,6 +710,7 @@
             title: "8-room house 235 m²",
             location: "93100 Montreuil (Signac - Peach Ripe)",
             price: "988,900 €",
+            link:"/slide.html",
             pricePerM2: "4,208 €/m²",
             image: "./Docs/Assets/Images/card1.jpeg",
             tags: ["Video", "Exclusivity"],
@@ -723,68 +731,72 @@
         galleryViewContainer.innerHTML = '';
 
         cardData.forEach((card) => {
-            // Create card element for Map View
-            const mapCard = document.createElement('div');
-            mapCard.classList.add('bg-white', 'inline-flex', 'flex-col', 'hover:shadow-lg', 'transition-all', 'cursor-pointer');
-            mapCard.innerHTML = `
-            <div class="relative">
-                <img src="${card.image}" class="brightness-75 w-full" alt="">
-                <div class="absolute top-2 left-2 flex items-center gap-2">
-                    ${card.tags.map(tag => `<p class="px-1 rounded-sm text-white font-bold uppercase text-sm bg-[#009db0]">${tag}</p>`).join('')}
-                </div>
-                <p class="px-1 rounded-sm text-white uppercase text-sm absolute bottom-2 right-2 flex items-center gap-1 font-semibold bg-transparent">${card.photosCount}<i class="fa-solid fa-camera"></i></p>
+    // Create card element for Map View
+    const mapCard = document.createElement('a');
+    mapCard.classList.add('bg-white', 'inline-flex', 'flex-col', 'hover:shadow-lg', 'transition-all', 'cursor-pointer');
+    mapCard.href = card.link; // Ensure href is set
+    mapCard.innerHTML = `
+        <div class="relative">
+            <img src="${card.image}" class="brightness-75 w-full" alt="">
+            <div class="absolute top-2 left-2 flex items-center gap-2">
+                ${card.tags.map(tag => `<p class="px-1 rounded-sm text-white font-bold uppercase text-sm bg-[#009db0]">${tag}</p>`).join('')}
             </div>
-            <div class="p-4">
-                <h2 class="font-bold text-[#495960] text-xl">${card.title}</h2>
-                <p class="text-zinc-400">${card.location}</p>
-                <p class="font-bold text-[#009db0] text-xl">${card.price} <span class="text-sm text-zinc-400">${card.pricePerM2}</span></p>
-            </div>
-        `;
-            mapViewContainer.appendChild(mapCard);
+            <p class="px-1 rounded-sm text-white uppercase text-sm absolute bottom-2 right-2 flex items-center gap-1 font-semibold bg-transparent">${card.photosCount}<i class="fa-solid fa-camera"></i></p>
+        </div>
+        <div class="p-4">
+            <h2 class="font-bold text-[#495960] text-xl">${card.title}</h2>
+            <p class="text-zinc-400">${card.location}</p>
+            <p class="font-bold text-[#009db0] text-xl">${card.price} <span class="text-sm text-zinc-400">${card.pricePerM2}</span></p>
+        </div>
+    `;
+    mapViewContainer.appendChild(mapCard);
 
-            // Create card element for List View
-            const listCard = document.createElement('div');
-            listCard.classList.add('bg-white', 'md:flex', 'hover:shadow-lg', 'transition-all', 'cursor-pointer');
-            listCard.innerHTML = `
-            <div class="relative max-w-lg w-full">
-                <img src="${card.image}" class="brightness-75 h-full w-full" alt="">
-                <p class="px-1 rounded-sm text-white uppercase text-sm absolute bottom-2 right-2 flex items-center gap-1 font-semibold bg-transparent">${card.photosCount}<i class="fa-solid fa-camera"></i></p>
+    // Create card element for List View
+    const listCard = document.createElement('a');
+    listCard.classList.add('bg-white', 'md:flex', 'hover:shadow-lg', 'transition-all', 'cursor-pointer');
+    listCard.href = card.link; // Ensure href is set
+    listCard.innerHTML = `
+        <div class="relative max-w-lg w-full">
+            <img src="${card.image}" class="brightness-75 h-full w-full" alt="">
+            <p class="px-1 rounded-sm text-white uppercase text-sm absolute bottom-2 right-2 flex items-center gap-1 font-semibold bg-transparent">${card.photosCount}<i class="fa-solid fa-camera"></i></p>
+        </div>
+        <div class="p-4">
+            <h2 class="font-bold text-[#495960] text-xl">${card.title}</h2>
+            <p class="text-zinc-400">${card.location}</p>
+            <p class="font-bold text-[#009db0] text-xl">${card.price} <span class="text-sm text-zinc-400">${card.pricePerM2}</span></p>
+            <div class="flex items-center gap-2 mt-2">
+                ${card.tags.map(tag => `<p class="px-1 rounded-sm text-white font-bold uppercase text-sm bg-[#009db0]">${tag}</p>`).join('')}
             </div>
-            <div class="p-4">
-                <h2 class="font-bold text-[#495960] text-xl">${card.title}</h2>
-                <p class="text-zinc-400">${card.location}</p>
-                <p class="font-bold text-[#009db0] text-xl">${card.price} <span class="text-sm text-zinc-400">${card.pricePerM2}</span></p>
-                <div class="flex items-center gap-2 mt-2">
-                    ${card.tags.map(tag => `<p class="px-1 rounded-sm text-white font-bold uppercase text-sm bg-[#009db0]">${tag}</p>`).join('')}
-                </div>
-                <p class="pt-3 leading-5 text-zinc-600">${card.description}</p>
-            </div>
-            <div class="flex flex-col justify-between p-5 max-w-[15rem] w-full">
-                <h2 class="text-lg font-semibold text-zinc-600">Add To Favorite</h2>
-                <p class="text-xs text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-            </div>
-        `;
-            listViewContainer.appendChild(listCard);
+            <p class="pt-3 leading-5 text-zinc-600">${card.description}</p>
+        </div>
+        <div class="flex flex-col justify-between p-5 max-w-[15rem] w-full">
+            <h2 class="text-lg font-semibold text-zinc-600">Add To Favorite</h2>
+            <p class="text-xs text-zinc-400">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </div>
+    `;
+    listViewContainer.appendChild(listCard);
 
-            // Create card element for Gallery View
-            const galleryCard = document.createElement('div');
-            galleryCard.classList.add('bg-white', 'inline-flex', 'flex-col', 'hover:shadow-lg', 'transition-all', 'cursor-pointer');
-            galleryCard.innerHTML = `
-            <div class="relative">
-                <img src="${card.image}" class="brightness-75 w-full" alt="">
-                <div class="absolute top-2 left-2 flex items-center gap-2">
-                    ${card.tags.map(tag => `<p class="px-1 rounded-sm text-white font-bold uppercase text-sm bg-[#009db0]">${tag}</p>`).join('')}
-                </div>
-                <p class="px-1 rounded-sm text-white uppercase text-sm absolute bottom-2 right-2 flex items-center gap-1 font-semibold bg-transparent">${card.photosCount}<i class="fa-solid fa-camera"></i></p>
+    // Create card element for Gallery View
+    const galleryCard = document.createElement('a');
+    galleryCard.classList.add('bg-white', 'inline-flex', 'flex-col', 'hover:shadow-lg', 'transition-all', 'cursor-pointer');
+    galleryCard.href = card.link; // Ensure href is set
+    galleryCard.innerHTML = `
+        <div class="relative">
+            <img src="${card.image}" class="brightness-75 w-full" alt="">
+            <div class="absolute top-2 left-2 flex items-center gap-2">
+                ${card.tags.map(tag => `<p class="px-1 rounded-sm text-white font-bold uppercase text-sm bg-[#009db0]">${tag}</p>`).join('')}
             </div>
-            <div class="p-4">
-                <h2 class="font-bold text-[#495960] text-xl">${card.title}</h2>
-                <p class="text-zinc-400">${card.location}</p>
-                <p class="font-bold text-[#009db0] text-xl">${card.price} <span class="text-sm text-zinc-400">${card.pricePerM2}</span></p>
-            </div>
-        `;
-            galleryViewContainer.appendChild(galleryCard);
-        });
+            <p class="px-1 rounded-sm text-white uppercase text-sm absolute bottom-2 right-2 flex items-center gap-1 font-semibold bg-transparent">${card.photosCount}<i class="fa-solid fa-camera"></i></p>
+        </div>
+        <div class="p-4">
+            <h2 class="font-bold text-[#495960] text-xl">${card.title}</h2>
+            <p class="text-zinc-400">${card.location}</p>
+            <p class="font-bold text-[#009db0] text-xl">${card.price} <span class="text-sm text-zinc-400">${card.pricePerM2}</span></p>
+        </div>
+    `;
+    galleryViewContainer.appendChild(galleryCard);
+});
+
     }
 
     generateCards();
